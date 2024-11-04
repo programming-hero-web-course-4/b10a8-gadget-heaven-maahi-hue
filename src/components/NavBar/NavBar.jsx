@@ -1,9 +1,10 @@
 import { FiHeart } from "react-icons/fi";
 import { BsCart3 } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
-    <div className="rounded-t-xl bg-[#9538E2]  m-3">
-      <div className="navbar  text-white  w-11/12 mx-auto py-3">
+    <div className="rounded-t-xl bg-[#9538E2]  mt-3">
+      <div className="navbar  text-white">
         <div className="navbar-start ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,13 +28,13 @@ const NavBar = () => {
               className="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow bg-[#9538E2]"
             >
               <li>
-                <a>Home</a>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
                 <a>Statistics</a>
               </li>
               <li>
-                <a>Dashboard</a>
+                <NavLink to="dashboard">Dashboard</NavLink>
               </li>
             </ul>
           </div>
@@ -42,13 +43,13 @@ const NavBar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-base font-bold">
             <li>
-              <a>Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
               <a>Statistics</a>
             </li>
             <li>
-              <a>Dashboard</a>
+              <NavLink to="dashboard">Dashboard</NavLink>
             </li>
           </ul>
         </div>

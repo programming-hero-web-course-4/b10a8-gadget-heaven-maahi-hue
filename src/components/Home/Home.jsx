@@ -1,7 +1,11 @@
+import Banner from "../Banner/Banner";
+import Explore from "../Explore/Explore";
+
 const Home = () => {
   return (
     <div>
-      <h2>Homepage</h2>
+      <Banner></Banner>
+      <Explore></Explore>
     </div>
   );
 };

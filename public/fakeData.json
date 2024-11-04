@@ -1,0 +1,162 @@
+[
+  {
+    "product_id": "101",
+    "product_title": "Wireless Bluetooth Headphones",
+    "product_image": "https://i.ibb.co.com/GJmbgnL/wirelwss.jpg",
+    "category": "Audio",
+    "price": 59.99,
+    "description": "High-quality wireless Bluetooth headphones with noise-cancellation.",
+    "Specification": [
+      "Bluetooth 5.0",
+      "Noise-canceling",
+      "Battery life: 20 hours",
+      "Range: 10 meters"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "102",
+    "product_title": "Noise-canceling Earbuds",
+    "product_image": "https://i.ibb.co.com/TBwzmwg/earbuds.jpg",
+    "category": "Audio",
+    "price": 69.99,
+    "description": "Compact noise-canceling earbuds with a sleek design and high-quality sound.",
+    "Specification": [
+      "Bluetooth 5.2",
+      "Battery life: 15 hours",
+      "Noise-canceling feature",
+      "Touch controls"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": "103",
+    "product_title": "Portable Bluetooth Speaker",
+    "product_image": "https://i.ibb.co.com/W6HDy9Y/speaker.jpg",
+    "category": "Audio",
+    "price": 79.99,
+    "description": "Powerful portable Bluetooth speaker with rich bass and crisp sound.",
+    "Specification": [
+      "Bluetooth 5.0",
+      "Battery life: 24 hours",
+      "Water-resistant",
+      "Built-in microphone"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "104",
+    "product_title": "Over-Ear Noise-Canceling Headphones",
+    "product_image": "https://i.ibb.co.com/xMH3cXt/over-noise.jpg",
+    "category": "Audio",
+    "price": 129.99,
+    "description": "Over-ear noise-canceling headphones with comfortable cushioning.",
+    "Specification": [
+      "Bluetooth 5.1",
+      "Noise-canceling",
+      "Battery life: 30 hours",
+      "Quick charge support"
+    ],
+    "availability": false,
+    "rating": 4.7
+  },
+  {
+    "product_id": "105",
+    "product_title": "True Wireless Stereo Earbuds",
+    "product_image": "https://i.ibb.co.com/dkvfkJC/buds.jpg",
+    "category": "Audio",
+    "price": 54.99,
+    "description": "True wireless stereo earbuds with deep bass and clear treble.",
+    "Specification": [
+      "Bluetooth 5.3",
+      "Battery life: 18 hours",
+      "Touch controls",
+      "Water-resistant"
+    ],
+    "availability": true,
+    "rating": 4.2
+  },
+  {
+    "product_id": "106",
+    "product_title": "High-Fidelity Music Player",
+    "product_image": "https://i.ibb.co.com/DW2hcYy/portable.jpg",
+    "category": "Audio",
+    "price": 159.99,
+    "description": "Portable high-fidelity music player with high-resolution audio support.",
+    "Specification": [
+      "Storage: 64GB",
+      "Battery life: 12 hours",
+      "Supports multiple audio formats",
+      "Bluetooth and WiFi connectivity"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "107",
+    "product_title": "4K Ultra HD Smart TV",
+    "product_image": "https://i.ibb.co.com/Ry2sKz6/tv.jpg",
+    "category": "Television",
+    "price": 549.99,
+    "description": "Experience stunning visuals with this 55-inch 4K Ultra HD Smart TV.",
+    "Specification": [
+      "Screen size: 55 inches",
+      "Resolution: 3840 x 2160",
+      "HDR support",
+      "Smart TV features"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "108",
+    "product_title": "Curved Gaming Monitor",
+    "product_image": "https://i.ibb.co.com/h7bnSy1/monitor.jpg",
+    "category": "Television",
+    "price": 299.99,
+    "description": "Immersive curved gaming monitor with ultra-wide viewing angle.",
+    "Specification": [
+      "Screen size: 32 inches",
+      "Resolution: 2560 x 1440",
+      "Refresh rate: 144Hz",
+      "Curved screen"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "109",
+    "product_title": "Smartphone with Quad Camera",
+    "product_image": "https://i.ibb.co.com/9hJNCgr/phone.jpg",
+    "category": "Mobile Phones",
+    "price": 649.99,
+    "description": "Feature-packed smartphone with a quad camera setup for stunning photos.",
+    "Specification": [
+      "Display: 6.7 inches, AMOLED",
+      "Storage: 256GB",
+      "Battery: 5000mAh",
+      "Quad rear camera (64MP + 12MP + 5MP + 5MP)"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "110",
+    "product_title": "Rugged Smartphone",
+    "product_image": "https://i.ibb.co.com/j4tXYnS/rugged.jpg",
+    "category": "Mobile Phones",
+    "price": 499.99,
+    "description": "Durable and rugged smartphone with water and dust resistance.",
+    "Specification": [
+      "Display: 5.5 inches, LCD",
+      "Storage: 64GB",
+      "Battery: 6000mAh",
+      "Water and dust resistant (IP68)"
+    ],
+    "availability": false,
+    "rating": 4.3
+  }
+]
