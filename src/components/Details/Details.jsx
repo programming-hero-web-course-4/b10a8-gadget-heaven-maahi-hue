@@ -1,11 +1,37 @@
+import { useState, useEffect } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { FiHeart } from "react-icons/fi";
 import { BsCart3 } from "react-icons/bs";
+import { AddToCart } from "../../utility/addToDb";
+import { AddToWish } from "../../utility/addToDb";
 
 const Details = () => {
   const { product_id } = useParams();
   const data = useLoaderData();
   const product = data.find((product) => product.product_id === product_id);
+  const [isInWishlist, setIsInWishlist] = useState(false);
+  useEffect(() => {
+    // Check LocalStorage to see if the item is already in the wishlist
+    const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+    const isAlreadyInWishlist = wishlist.some(
+      (item) => item.product_id === product.product_id
+    );
+    setIsInWishlist(isAlreadyInWishlist);
+  }, [product.product_id]);
+
+  const handleAddToCart = (id) => {
+    AddToCart(id);
+  };
+
+  const handleAddToWish = (id) => {
+    const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+    if (!wishlist.some((item) => item.product_id === id)) {
+      wishlist.push(product);
+      localStorage.setItem("wishlist", JSON.stringify(wishlist));
+      setIsInWishlist(true);
+      AddToWish(id);
+    }
+  };
 
   const {
     product_id: id,
@@ -95,10 +121,19 @@ const Details = () => {
             </div>
 
             <div className="flex gap-3 ">
-              <button className="bg-[#9538E2] p-3 mb-3 text-white rounded-3xl flex text-base font-bold gap-2">
+              <button
+                onClick={() => handleAddToCart(id)}
+                className="bg-[#9538E2] p-3 mb-3 text-white rounded-3xl flex text-base font-bold gap-2"
+              >
                 Add To Cart <BsCart3 />
               </button>
-              <button className=" bg-white px-3 py-2 rounded-3xl border border-inherit">
+              <button
+                onClick={() => handleAddToWish(id)}
+                disabled={isInWishlist} // Disable the button if the item is already in the wishlist
+                className={`bg-white px-3 py-2 rounded-3xl border border-inherit ${
+                  isInWishlist ? "bg-gray-400" : ""
+                }`}
+              >
                 <FiHeart />
               </button>
             </div>

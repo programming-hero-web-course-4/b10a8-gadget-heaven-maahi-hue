@@ -3,8 +3,8 @@ import { BsCart3 } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
-    <div className="rounded-t-xl bg-[#9538E2]  mt-3">
-      <div className="navbar  text-white">
+    <div className="rounded-t-xl   mt-3">
+      <div className="navbar ">
         <div className="navbar-start ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,7 +31,7 @@ const NavBar = () => {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <a>Statistics</a>
+                <NavLink to="about"> About Us</NavLink>
               </li>
               <li>
                 <NavLink to="dashboard">Dashboard</NavLink>
@@ -46,7 +46,7 @@ const NavBar = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a>Statistics</a>
+              <NavLink to="about"> About Us</NavLink>
             </li>
             <li>
               <NavLink to="dashboard">Dashboard</NavLink>

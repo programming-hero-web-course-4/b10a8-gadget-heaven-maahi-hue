@@ -9,7 +9,7 @@ const Product = ({ product }) => {
         <figure className="px-10 pt-10">
           <img src={product_image} className="rounded-xl" />
         </figure>
-        <div className="card-body  ">
+        <div className="card-body">
           <h2 className="card-title">{product_title}</h2>
           <p>Price: {price}</p>
           <div className="card-actions">

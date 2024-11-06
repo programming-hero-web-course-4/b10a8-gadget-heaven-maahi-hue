@@ -3,7 +3,7 @@ import Explore from "../Explore/Explore";
 
 const Home = () => {
   return (
-    <div>
+    <div className="w-11/12 mx-auto my-3">
       <Banner></Banner>
       <Explore></Explore>
     </div>

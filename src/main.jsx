@@ -7,6 +7,10 @@ import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Home from "./components/Home/Home";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Details from "./components/Details/Details";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import About from "./components/About/About";
+import Explore from "./components/Explore/Explore";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,15 +20,31 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        children: [
+          {
+            path: "/",
+            element: <Explore></Explore>,
+          },
+          {
+            path: ":category",
+            element: <Explore></Explore>,
+          },
+        ],
       },
       {
         path: "products/:product_id",
         element: <Details></Details>,
         loader: () => fetch("/fakeData.json"),
       },
+
       {
         path: "dashboard",
         element: <Dashboard></Dashboard>,
+        loader: () => fetch("/fakeData.json"),
+      },
+      {
+        path: "about",
+        element: <About></About>,
       },
     ],
   },
@@ -33,5 +53,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <ToastContainer />
   </StrictMode>
 );
