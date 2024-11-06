@@ -23,9 +23,9 @@ const Explore = () => {
     : products;
 
   return (
-    <div className="my-6 flex">
-      <div className="w-1/5 bg-gray-100 p-2 rounded-lg">
-        <h2 className="text-4xl font-bold  mb-4">Categories</h2>
+    <div className="my-6 flex flex-col lg:flex-row">
+      <div className="w-full lg:w-1/4 bg-gray-100 p-4 rounded-lg mb-6 lg:mb-0">
+        <h2 className="text-3xl lg:text-4xl font-bold mb-4">Categories</h2>
         <div className="space-y-4">
           {categories.map((categoryName) => (
             <Link
@@ -38,14 +38,17 @@ const Explore = () => {
           ))}
         </div>
       </div>
-
-      <div className="w-4/5 pl-6">
+      <div className="w-full lg:w-3/4 pl-0 lg:pl-6">
         <h2 className="text-4xl font-bold text-center mb-6">
-          Explore Cutting-Edge Gadgets
+          {category
+            ? `Explore ${category} Gadgets`
+            : "Explore Cutting-Edge Gadgets"}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center">
           {filteredProducts.map((product) => (
-            <Product product={product} key={product.product_id}></Product>
+            <div className="mx-auto">
+              <Product product={product} key={product.product_id} />
+            </div>
           ))}
         </div>
       </div>

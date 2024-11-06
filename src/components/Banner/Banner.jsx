@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import backgroundImage from "../../assets/images/banner.jpg";
+
 const Banner = () => {
   return (
     <div className="relative">
@@ -9,11 +10,11 @@ const Banner = () => {
             <h1 className="text-5xl font-bold my-6">
               Upgrade Your Tech Accessorize with Gadget Heaven Accessories
             </h1>
-            <p className=" text-base font-normal">
+            <p className="text-base font-normal">
               Explore the latest gadgets that will take your experience to the
               next level. From smart devices to
             </p>
-            <p className=" text-base font-normal">
+            <p className="text-base font-normal">
               the coolest accessories, we have it all!
             </p>
             <Link to={`/dashboard`}>
@@ -25,8 +26,9 @@ const Banner = () => {
           </div>
         </div>
       </div>
+
       <div
-        className=" w-2/3 h-[545px]  mx-auto z-20 bg-[#9538E2] p-10 border-2 border-inherit rounded-xl"
+        className="w-full md:w-2/3 h-[60vh] mx-auto z-20 bg-[#9538E2] p-10 border-2 border-inherit rounded-xl"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
@@ -35,7 +37,7 @@ const Banner = () => {
           top: "-150px",
         }}
       >
-        <div className=" mx-auto "></div>
+        <div className="mx-auto"></div>
       </div>
     </div>
   );

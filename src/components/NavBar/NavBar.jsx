@@ -1,10 +1,16 @@
 import { FiHeart } from "react-icons/fi";
 import { BsCart3 } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 const NavBar = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
   return (
-    <div className="rounded-t-xl   mt-3">
-      <div className="navbar ">
+    <div
+      className={`rounded-t-xl mt-3 ${
+        isHomePage ? "bg-[#9538E2] w-11/12 mx-auto" : "bg-white"
+      }`}
+    >
+      <div className="navbar  ">
         <div className="navbar-start ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,7 +31,8 @@ const NavBar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow bg-[#9538E2]"
+              className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              style={{ backgroundColor: isHomePage ? "#9538E2" : "white" }}
             >
               <li>
                 <NavLink to="/">Home</NavLink>

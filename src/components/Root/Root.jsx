@@ -4,9 +4,11 @@ import NavBar from "../NavBar/NavBar";
 
 const Root = () => {
   return (
-    <div className=" bg-base-200">
+    <div>
       <NavBar></NavBar>
-      <Outlet></Outlet>
+      <div className="bg-base-200">
+        <Outlet></Outlet>
+      </div>
       <Footer></Footer>
     </div>
   );
